@@ -1,0 +1,212 @@
+#index-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+#title {
+    padding-left: 15.5rem;
+}
+
+#title h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+#title h5 {
+    font-size: 1.8rem;
+    width: 80%;
+    line-height: 1.6;
+    color: grey;
+}
+
+#title button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding: .8rem 1.5rem;
+}
+
+/* Body */
+section {
+    background-color: hsl(225, 33%, 95%);
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#link-shorten {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+#link-shorten img {
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: hsl(257, 27%, 26%);
+}
+
+#link-shorten input {
+    border: none;
+    width: 50rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    font-size: 18px;
+}
+
+#link-shorten input:placeholder {
+    color: grey;
+}
+
+#link-shorten button {
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 10px;
+    padding: .9rem 2rem;
+    color: white;
+    font-size: 18px;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#link-shorten button:active {
+    background-color: hsl(255, 11%, 22%);
+}
+
+.statistics {
+    margin-bottom: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.statistics p {
+    width: 65%;
+    line-height: 1.5;
+    color: grey;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#container {
+    display: flex;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+#container .card:nth-child(1) {
+    transform: translateY(-5%)
+}
+
+#container .card:nth-child(2) {
+    margin: 0 2rem;
+    transform: translateY(8%);
+}
+
+#container .card:nth-child(3) {
+    transform: translateY(20%);
+}
+
+.card {
+    background-color: white;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px;
+    padding: 0 1.5rem;
+    z-index: 3;
+}
+
+.card>div {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    aspect-ratio: 1;
+    background-color: hsl(257, 27%, 26%);
+    padding: 1rem;
+    transform: translateY(-50%);
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+
+.card p {
+    line-height: 1.5rem;
+    color: grey;
+}
+
+hr {
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    height: .5rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#body-bottom {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-color: hsl(257, 27%, 26%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+}
+
+#body-bottom img {
+    position: absolute;
+    width: 100%;
+    background-color: hsl(257, 27%, 26%);
+    z-index: -1;
+}
+
+#body-bottom h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem;
+}
+
+#body-bottom button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .8rem 1.8rem;
+}

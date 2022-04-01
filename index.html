@@ -9,7 +9,12 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/config.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <!-- Font Family -->
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -20,54 +25,81 @@
 
   <nav>
 
-    <div id="nav-links">
-      <a>Features</a>
-      <a>Pricing</a>
-      <a>Resources</a>
-    </div>
+    <div id="nav-items">
+      <div>
+        <img src="./images/logo.svg" alt="Logo">
+        <div class="nav-links">
+          <a>Features</a>
+          <a>Pricing</a>
+          <a>Resources</a>
+        </div>
+      </div>
 
-    <div id="nav-signup">
-      <button>Login</button>
-      <button>Sign up</button>
+      <div id="nav-signup">
+        <a>Login</a>
+        <button class="blue-rounded">Sign up</button>
+      </div>
     </div>
-
 
   </nav>
 
-  <main id="title">
+  <main id="index-main">
 
-    <h1>More than just <br>shorter links</h1>
+    <div id="title">
 
-    <h5>Build your brand's recongnition and get detailed insights on how your links are preforming.</h5>
+      <h1>More than just <br>shorter links</h1>
 
-    <button>Get Started</button>
+      <h5>Build your brand's recongnition and get detailed insights on how your links are preforming.</h5>
+
+      <button class="blue-rounded">Get Started</button>
+    </div>
+
+    <img src="./images/illustration-working.svg" alt="desktop">
 
   </main>
 
+
   <section>
+    <!-- <img src="./images/bg-shorten-desktop.svg" alt="desktop">
+    <img src="./images/bg-shorten-mobile.svg" alt="desktop"> -->
 
     <div id="link-shorten">
+      <!-- <img src="./images/bg-shorten-desktop.svg" alt="desktop"> -->
       <input type="text" name="link" placeholder="Shorten a link here...">
       <button>Shorten it!</button>
     </div>
 
-    <h2>Advanced Statistics</h2>
-    <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+    <div id="links"></div>
+
+
+    <div class="statistics">
+      <h2>Advanced Statistics</h2>
+      <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+    </div>
 
 
     <div id="container">
 
       <div class="card">
+        <div>
+          <img src="./images/icon-brand-recognition.svg" alt="desktop">
+        </div>
         <h4>Brand Recongition</h4>
         <p>Boost your brand recognition with each click. Generic links don’t
           mean a thing. Branded links help instil confidence in your content.</p>
       </div>
       <div class="card">
+        <div>
+          <img src="./images/icon-detailed-records.svg" alt="desktop">
+        </div>
         <h4>Detailed Records</h4>
         <p>Gain insights into who is clicking your links. Knowing when and where
           people engage with your content helps inform better decisions.</p>
       </div>
       <div class="card">
+        <div>
+          <img src="./images/icon-fully-customizable.svg" alt="desktop">
+        </div>
         <h4>Fully Customizable</h4>
         <p>Improve brand awareness and content discoverability through customizable
           links, supercharging audience engagement.</p>
@@ -77,9 +109,15 @@
 
     </div>
 
+
     <div id="body-bottom">
+
+      <!-- <img src="./images/bg-boost-desktop.svg" alt="desktop"> -->
+      <!--
+      <img src="./images/bg-boost-mobile.svg" alt="desktop"> -->
+
       <h1>Boost your links today</h1>
-      <button>Get Started</button>
+      <button class="blue-rounded">Get Started</button>
     </div>
 
   </section>
@@ -90,62 +128,49 @@
       <h2>Shortly</h2>
     </div>
 
-    <div class="footer-links">
-      <p>Feartures</p>
-      <a>Link Shortening</a>
-      <a>Branded Links</a>
-      <a>Analytics</a>
-    </div>
 
-    <div class="footer-links">
-      <p>Resources</p>
-      <a>Blog</a>
-      <a>Developers</a>
-      <a>Support</a>
-    </div>
+    <div id="footer-links">
+      <div class="footer-link">
+        <p>Feartures</p>
+        <a>Link Shortening</a>
+        <a>Branded Links</a>
+        <a>Analytics</a>
+      </div>
 
-    <div class="footer-links">
-      <p>Company</p>
-      <a>About</a>
-      <a>Our Team</a>
-      <a>Careers</a>
-      <a>Contact</a>
-    </div>
+      <div class="footer-link">
+        <p>Resources</p>
+        <a>Blog</a>
+        <a>Developers</a>
+        <a>Support</a>
+      </div>
 
-    <div class="footer-icons">
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+      <div class="footer-link">
+        <p>Company</p>
+        <a>About</a>
+        <a>Our Team</a>
+        <a>Careers</a>
+        <a>Contact</a>
+      </div>
+
+      <div class="footer-icons">
+        <img src="./images/icon-facebook.svg">
+        <img src="./images/icon-twitter.svg">
+        <img src="./images/icon-pinterest.svg">
+        <img src="./images/icon-instagram.svg">
+      </div>
     </div>
 
 
   </footer>
 
 
-  Features
 
-  Link Shortening
-  Branded Links
-  Analytics
 
-  Resources
 
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Andrew Monis</a>
+  </div> -->
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+#nav-items {
+    color: grey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 1rem 15.5rem;
+    Font-size: 18px
+}
+
+#nav-items>div {
+    display: flex;
+    align-items: center;
+}
+
+#nav-items img {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.nav-links a {
+    padding: 0.5rem;
+}
+
+#nav-signup button {
+    font-weight: 700;
+    Font-size: 18px;
+    margin: 1rem;
+    border: none;
+}
