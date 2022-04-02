@@ -15,7 +15,10 @@
   <link rel="stylesheet" href="./styles/responsive.css">
 
   <!-- Font Family -->
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -91,21 +94,12 @@
     <div id="main-content">
       <div id="link-shorten">
 
-        <input type="text" name="link" placeholder="Shorten a link here...">
-        <button>Shorten it!</button>
+        <input class="long-link" type="text" name="link" placeholder="Shorten a link here...">
+        <em id="invalid">Please add a link</em>
+        <button id="activate-shorten">Shorten it!</button>
       </div>
 
       <div id="links">
-
-        <div class="output">
-          <p class="input-link">Link</p>
-
-          <div>
-            <p class="output-link"> link</p>
-            <button>Copy</button>
-          </div>
-        </div>
-
 
       </div>
 

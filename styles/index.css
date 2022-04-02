@@ -64,6 +64,18 @@ section {
     transform: translateY(-50%);
 }
 
+#invalid {
+    position: absolute;
+    color: red;
+    top: 7rem;
+    left: 9rem;
+    display: none;
+}
+
+.empty::placeholder {
+    color: red;
+}
+
 #link-shorten img {
     position: absolute;
     z-index: -1;
@@ -80,9 +92,7 @@ section {
     font-size: 18px;
 }
 
-#link-shorten input:placeholder {
-    color: grey;
-}
+
 
 #link-shorten button {
     border: none;

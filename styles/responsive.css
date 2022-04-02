@@ -19,6 +19,10 @@
         width: 500px;
         height: auto;
     }
+
+    #invalid {
+        left: 6rem;
+    }
 }
 
 @media screen and (max-width: 1049px) and (min-width: 800px) {
@@ -46,6 +50,10 @@
 
     #mobile-menu {
         display: flex;
+    }
+
+    #invalid {
+        left: 4rem;
     }
 
     #container {
@@ -105,6 +113,11 @@
 }
 
 @media screen and (max-width: 799px) {
+    #invalid {
+        top: 4rem;
+        left: 2rem;
+    }
+
     #index-main {
         flex-direction: column-reverse;
         padding: 0;
