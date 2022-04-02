@@ -23,19 +23,23 @@ hamburger.addEventListener("click", () => {
 
 
 // Retrieve Shorten Link 
-activateShorten.addEventListener("click", () => {
+activateShorten.addEventListener("click", urlShorten)
+longLink.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") { urlShorten() }
+})
 
 
-    console.log(isUrlValid(longLink.value));
+function urlShorten() {
 
     if (longLink.value === '' || isUrlValid(longLink.value) === false) {
         longLink.style.border = "2px solid red"
         longLink.classList.add('empty')
         invalid.style.display = 'block'
+        longLink.value = ''
     } else {
         longLink.style.border = "none"
         longLink.classList.remove('empty')
-        invalid.style.display = 'none'
+        invalid.style.display = 'invalid'
         let value = longLink.value;
         fetch("https://api.shrtco.de/v2/shorten?url=" + value)
             .then(res => res.json())
@@ -51,13 +55,13 @@ activateShorten.addEventListener("click", () => {
                     links.insertAdjacentHTML(
                         "beforeend",
                         `<div class="output">
-                        <p class="input-link">${cur.result.original_link}</p>
+                            <p class="input-link">${cur.result.original_link}</p>
 
-                        <div>
-                        <p id="value${index}" class="output-link">${currentLink}</p>
-                        <button id="copy${index}" onclick="copied(${index})" class="copy">Copy</button>
-                        </div>
-                    </div>`
+                            <div>
+                            <p id="value${index}" class="output-link">${currentLink}</p>
+                            <button id="copy${index}" onclick="copied(${index})" class="copy">Copy</button>
+                            </div>
+                        </div>`
                     )
                 })
             })
@@ -65,7 +69,7 @@ activateShorten.addEventListener("click", () => {
     }
 
 
-})
+}
 
 function isUrlValid(userInput) {
     var res = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
