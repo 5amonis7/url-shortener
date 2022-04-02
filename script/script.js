@@ -25,7 +25,10 @@ hamburger.addEventListener("click", () => {
 // Retrieve Shorten Link 
 activateShorten.addEventListener("click", () => {
 
-    if (longLink.value === '') {
+
+    console.log(isUrlValid(longLink.value));
+
+    if (longLink.value === '' || isUrlValid(longLink.value) === false) {
         longLink.style.border = "2px solid red"
         longLink.classList.add('empty')
         invalid.style.display = 'block'
@@ -63,6 +66,14 @@ activateShorten.addEventListener("click", () => {
 
 
 })
+
+function isUrlValid(userInput) {
+    var res = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+    if (res == null)
+        return false;
+    else
+        return true;
+}
 
 function copied(object) {
     const value = document.querySelector(`#value${object}`);
