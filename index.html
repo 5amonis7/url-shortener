@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
 
   <!-- Font Family -->
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
@@ -22,6 +23,31 @@
 </head>
 
 <body>
+
+  <div id="mobile-menu">
+    <img src="./images/logo.svg" alt="Logo">
+    <div class="hamburger">
+      <div class="hamburger-icon"></div>
+    </div>
+
+    <div class="menu">
+      <div id="mobile-links">
+        <a>Features</a>
+        <a>Pricing</a>
+        <a>Resources</a>
+      </div>
+
+      <div id="mobile-signup">
+        <a>Login</a>
+        <button>Signup</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
 
   <nav>
 
@@ -60,16 +86,30 @@
 
 
   <section>
-    <!-- <img src="./images/bg-shorten-desktop.svg" alt="desktop">
-    <img src="./images/bg-shorten-mobile.svg" alt="desktop"> -->
 
-    <div id="link-shorten">
-      <!-- <img src="./images/bg-shorten-desktop.svg" alt="desktop"> -->
-      <input type="text" name="link" placeholder="Shorten a link here...">
-      <button>Shorten it!</button>
+
+    <div id="main-content">
+      <div id="link-shorten">
+
+        <input type="text" name="link" placeholder="Shorten a link here...">
+        <button>Shorten it!</button>
+      </div>
+
+      <div id="links">
+
+        <div class="output">
+          <p class="input-link">Link</p>
+
+          <div>
+            <p class="output-link"> link</p>
+            <button>Copy</button>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
-
-    <div id="links"></div>
 
 
     <div class="statistics">
@@ -111,10 +151,6 @@
 
 
     <div id="body-bottom">
-
-      <!-- <img src="./images/bg-boost-desktop.svg" alt="desktop"> -->
-      <!--
-      <img src="./images/bg-boost-mobile.svg" alt="desktop"> -->
 
       <h1>Boost your links today</h1>
       <button class="blue-rounded">Get Started</button>
@@ -172,5 +208,7 @@
     Coded by <a href="#">Andrew Monis</a>
   </div> -->
 </body>
+
+<script type="text/javascript" src="./script/script.js"></script>
 
 </html>

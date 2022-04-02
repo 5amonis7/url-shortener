@@ -1,7 +1,7 @@
 footer {
     background-color: hsl(260, 8%, 14%);
     color: white;
-    padding: 4rem 15rem;
+    padding: 4rem 10rem;
     display: flex;
     justify-content: space-between;
 }
@@ -33,10 +33,16 @@ footer {
     padding: .5rem 0;
 }
 
+.footer-link a:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+
 .footer-icons img {
     padding: 0 .5rem;
 }
 
 .footer-icons img:hover {
     cursor: pointer;
+    fill: hsl(180, 66%, 49%);
 }

@@ -18,6 +18,10 @@ body {
     cursor: pointer;
 }
 
+.blue-rounded:hover {
+    background-color: rgb(145, 228, 228);
+}
+
 .blue-rounded:active {
     background-color: hsl(255, 11%, 22%) !important;
 }
@@ -28,9 +32,4 @@ body {
 
 .button:active {
     background-color: hsl(255, 11%, 22%) !important;
-}
-
-a:hover {
-    cursor: pointer;
-    color: hsl(180, 66%, 49%) !important;
 }
