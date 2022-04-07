@@ -1,0 +1,283 @@
+@media screen and (max-width: 1300px) and (min-width: 1050px) {
+    #index-main {
+        padding: 1rem 8rem;
+    }
+
+    #title h5 {
+        font-size: 1rem;
+    }
+
+    #title h1 {
+        font-size: 3rem;
+    }
+
+    #nav-items {
+        padding: 1rem 8rem;
+    }
+
+    #index-main img {
+        width: 500px;
+        height: auto;
+    }
+
+    #invalid {
+        left: 5rem;
+    }
+    .attribution{
+        bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 800px) {
+    #index-main {
+        padding: 1rem 3rem;
+        margin-top: 4rem;
+    }
+
+    #title h5 {
+        font-size: 1rem;
+    }
+
+    #title h1 {
+        font-size: 3rem;
+    }
+
+    #index-main img {
+        width: 300px;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+    }
+
+    #invalid {
+        left: 4rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container .card:nth-child(2) {
+        margin: 2rem 0;
+    }
+
+    hr {
+        width: .5rem;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    footer {
+        padding: 2rem 0 2rem 3rem;
+    }
+
+    .footer-icons img {
+        padding: .8rem;
+    }
+
+    .output {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .input-link {
+        border-bottom: 1px solid lightgrey;
+        width: 100%;
+    }
+
+    .input-link,
+    .output-link {
+        padding: 1rem .8rem;
+    }
+
+    .output>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .output div button {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .attribution{
+        bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #invalid {
+        top: 4rem;
+        left: 2rem;
+    }
+
+    #index-main {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    #title {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    #title h5 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #title h1 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    #index-main img {
+        width: 500px;
+        transform: translateX(20%);
+        height: auto;
+    }
+
+    #link-shorten {
+        flex-direction: column;
+        padding: 0 1.5rem;
+        width: 90%;
+    }
+
+    #link-shorten input {
+        width: 100%;
+        margin-bottom: 2rem
+    }
+
+    #link-shorten button {
+        width: 100%;
+        margin: 0;
+    }
+
+    #links {
+        width: 90%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container .card:nth-child(2) {
+        margin: 2rem 0;
+    }
+
+    hr {
+        width: .5rem;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .statistics h2 {
+        font-size: 2rem;
+    }
+
+    .statistics p {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    #body-bottom {
+        padding: 0;
+        text-align: center;
+    }
+
+    #body-bottom h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 4rem 0 2rem 0;
+    }
+
+    #body-bottom button {
+        margin-bottom: 4rem;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 2rem 0 2rem 3rem;
+    }
+
+    .footer-icons img {
+        padding: .8rem;
+    }
+
+    .output {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .input-link {
+        border-bottom: 1px solid lightgrey;
+        width: 100%;
+    }
+
+    .input-link,
+    .output-link {
+        padding: 1rem .8rem;
+    }
+
+    .output>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .output div button {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    footer,
+    #footer-links,
+    .footer-link {
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-title {
+        margin: 2rem 0;
+    }
+
+    #footer-links div {
+        margin-bottom: 2rem;
+    }
+    .attribution{
+        bottom: .5rem;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    font-family: "Poppins", sans-serif;
+}
+
+.blue-rounded {
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.blue-rounded:hover {
+    background-color: rgb(145, 228, 228);
+}
+
+.blue-rounded:active {
+    background-color: hsl(255, 11%, 22%) !important;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: hsl(255, 11%, 22%) !important;
+}

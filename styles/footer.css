@@ -1,0 +1,48 @@
+footer {
+    background-color: hsl(260, 8%, 14%);
+    color: white;
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#footer-links {
+    display: flex;
+}
+
+#footer-links div {
+    margin: 0 2.5rem;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link p {
+    padding-bottom: 1.5rem;
+}
+
+.footer-link a {
+    color: grey;
+    padding: .5rem 0;
+}
+
+.footer-link a:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+
+.footer-icons img {
+    padding: 0 .5rem;
+}
+
+.footer-icons img:hover {
+    cursor: pointer;
+    fill: hsl(180, 66%, 49%);
+}
