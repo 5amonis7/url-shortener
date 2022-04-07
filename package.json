@@ -1,0 +1,23 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "A challenge by frontend mentor used to help develope skills in frontend development to show or learn new skills.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5amonis7/url-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5amonis7/url-shortener/issues"
+  },
+  "homepage": "https://github.com/5amonis7/url-shortener#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
